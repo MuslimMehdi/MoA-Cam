@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:background="#071014"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+        <TextureView android:id="@+id/preview" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <LinearLayout android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical"
+            android:background="#88071014" android:layout_width="match_parent" android:layout_height="60dp" android:layout_gravity="top">
+            <TextView android:text="●  MOA CAM" android:textColor="#D39A7B" android:textStyle="bold" android:textSize="20sp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" />
+            <TextView android:id="@+id/streamInfo" android:text="STANDBY" android:textColor="#E8E8E8" android:textSize="13sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView android:layout_width="350dp" android:layout_height="match_parent" android:background="#0B181D">
+        <LinearLayout android:orientation="vertical" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:src="@drawable/moa_logo" android:layout_width="74dp" android:layout_height="74dp" android:layout_gravity="center_horizontal" android:contentDescription="Masters Of All" />
+            <TextView android:text="MoA Cam" android:textColor="#FFFFFF" android:textSize="26sp" android:textStyle="bold" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:text="MASTERS OF ALL • CINEMA CAMERA" android:textColor="#9CA9AD" android:textSize="10sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+            <TextView android:text="EXPOSURE" android:textColor="#D39A7B" android:textStyle="bold" android:paddingTop="18dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/isoLabel" android:text="ISO  AUTO" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="8dp" />
+            <SeekBar android:id="@+id/iso" android:max="6400" android:progress="0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/shutterLabel" android:text="SHUTTER  AUTO" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/shutter" android:max="8" android:progress="0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:text="EV" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/ev" android:max="24" android:progress="12" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:id="@+id/aeLock" android:text="AE LOCK  OFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:text="FOCUS" android:textColor="#D39A7B" android:textStyle="bold" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/focusLabel" android:text="FOCUS  AUTO" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/focus" android:max="1000" android:progress="0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:text="WHITE BALANCE" android:textColor="#D39A7B" android:textStyle="bold" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/wbLabel" android:text="WB  AUTO" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <SeekBar android:id="@+id/wb" android:max="8000" android:progress="0" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:text="AUDIO" android:textColor="#D39A7B" android:textStyle="bold" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Spinner android:id="@+id/audioDevice" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <TextView android:text="External USB mics/interfaces are preferred when Android exposes them." android:textColor="#8FA0A5" android:textSize="11sp" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+            <TextView android:text="STREAM" android:textColor="#D39A7B" android:textStyle="bold" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:id="@+id/url" android:text="http://phone-ip:8080/stream" android:textColor="#FFFFFF" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:id="@+id/record" android:text="●  RECORD" android:layout_width="match_parent" android:layout_height="wrap_content" />
+            <Button android:id="@+id/switchCamera" android:text="SWITCH LENS / CAMERA" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
