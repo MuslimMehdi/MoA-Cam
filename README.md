@@ -49,3 +49,6 @@ The goal is not simply to make another camera application.
 <img width="1536" height="1024" alt="ChatGPT Image Sep 22, 2026, 07_37_39 PM" src="https://github.com/user-attachments/assets/09c13bc3-0067-456f-8fda-9077ebed69ea" />
 
 > **MoA Cam unlocks the potential of the camera hardware people already own, transforming a compatible smartphone into a versatile cinema camera, production tool, and professional webcam.**
+
+
+###### BTW uptill this point all of this is made by ChatGPT... I'll put my touch into it after i start reverse engineering this project... Wait for that video
