@@ -51,4 +51,4 @@ The goal is not simply to make another camera application.
 > **MoA Cam unlocks the potential of the camera hardware people already own, transforming a compatible smartphone into a versatile cinema camera, production tool, and professional webcam.**
 
 
-###### BTW uptill this point all of this is made by ChatGPT... I'll put my touch into it after i start reverse engineering this project... Wait for that video
+#### BTW uptill this point all of this is made by ChatGPT... I'll put my touch into it after i start reverse engineering this project... Wait for that video
